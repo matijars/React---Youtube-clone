@@ -3,7 +3,7 @@ import "./Header.css";
 
 import Logo from "../../img/youtube-logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
-import { IconButton } from "@material-ui/core";
+import { Tooltip, IconButton } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import VideoCallIcon from "@material-ui/icons/VideoCall";
 import AppsIcon from "@material-ui/icons/Apps";
@@ -21,20 +21,28 @@ function Header() {
       </div>
       <div className='header__middle'>
         <input type='text' placeholder='Search' />
-        <button className='header__searchBtn'>
-          <SearchIcon />
-        </button>
+        <Tooltip title='Search' className='test'>
+          <button className='header__searchBtn'>
+            <SearchIcon />
+          </button>
+        </Tooltip>
       </div>
       <div className='header__right'>
-        <IconButton>
-          <VideoCallIcon />
-        </IconButton>
-        <IconButton>
-          <AppsIcon />
-        </IconButton>
-        <IconButton>
-          <NotificationsIcon />
-        </IconButton>
+        <Tooltip title='Create'>
+          <IconButton>
+            <VideoCallIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title='YouTube apps'>
+          <IconButton>
+            <AppsIcon />
+          </IconButton>
+        </Tooltip>
+        <Tooltip title='Notifications'>
+          <IconButton>
+            <NotificationsIcon />
+          </IconButton>
+        </Tooltip>
         <AccountCircleIcon className='headerAvatar' />
       </div>
     </div>

@@ -3,7 +3,11 @@
 
 /* Color variables */
 :root {
-  --color-text: red;
+  --soft-gray: #f9f9f9;
+  --soft-gray-hvr: #f0f0f0;
+  --light-gray: #ccc;
+  --gray: #808080;
+  --dark-gray: #606060;
 }
 
 /* Global reset */
@@ -11,4 +15,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.MuiSvgIcon-root {
+  color: var(--dark-gray) !important;
+}
+
+.MuiTooltip-tooltip {
+  border-radius: 2px !important;
+  font-size: 12px !important;
+  padding: 10px !important;
+  background-color: rgba(96, 96, 96, 0.9) !important;
 }
