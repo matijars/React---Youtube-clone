@@ -1,0 +1,32 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  padding: 8px 22px;
+  cursor: pointer;
+}
+
+.sidebarOption:hover {
+  background-color: var(--sideOptionHover);
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+  font-size: 23px;
+}
+
+.sidebarOption > span {
+  font-size: 14px;
+  margin-left: 25px;
+}
+
+.sidebarOption--active {
+  font-weight: 500;
+  background-color: var(--sideOptionActive);
+}
+
+.sidebarOption--active > .MuiSvgIcon-root {
+  color: var(--youtube-main) !important;
+}
+
+.sidebarOption--active:hover {
+  background-color: #d9d9d9;
+}
