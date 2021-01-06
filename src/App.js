@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/header/Header";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -14,12 +14,16 @@ function App() {
       <Header />
       <div className='app__body'>
         <Router>
-          <Sidebar />
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/trending' component={Trending} />
-            <Route path='/subscriptions' component={Subscriptions} />
-          </Switch>
+          <div className='sidebar__container'>
+            <Sidebar />
+          </div>
+          <div className='mainContent__container'>
+            <Switch>
+              <Route path='/' exact component={Home} />
+              <Route path='/trending' component={Trending} />
+              <Route path='/subscriptions' component={Subscriptions} />
+            </Switch>
+          </div>
         </Router>
       </div>
     </div>

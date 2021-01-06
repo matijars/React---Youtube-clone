@@ -18,6 +18,11 @@
   margin-left: 25px;
 }
 
+.sidebarOption > img {
+  width: 25px;
+  border-radius: 50%;
+}
+
 .sidebarOption--active {
   font-weight: 500;
   background-color: var(--sideOptionActive);
@@ -29,4 +34,23 @@
 
 .sidebarOption--active:hover {
   background-color: #d9d9d9;
+}
+
+@media (max-width: 1330px) {
+  .sidebarOption {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 65px;
+  }
+
+  .sidebarOption > .MuiSvgIcon-root {
+    margin-bottom: 5px;
+  }
+
+  .sidebarOption > span {
+    font-size: 10px;
+    margin: 0;
+  }
 }

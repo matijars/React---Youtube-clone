@@ -1,10 +1,83 @@
 .sidebar {
+  position: fixed;
   display: flex;
+  margin-top: 59px;
   flex-direction: column;
-  min-width: 240px;
+  height: calc(100% - 3.5em);
+  width: 100%;
+  max-width: 240px;
+
+  overflow-y: scroll;
+  overflow-y: overlay;
 }
 
 .sidebar__section {
   padding: 10px 0px;
   border-bottom: 1px solid var(--sideOptionActive);
+}
+
+.sidebarTitle {
+  padding: 8px 22px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--gray);
+}
+
+.sidebar__footer {
+  padding: 18px 22px;
+  word-wrap: break-word;
+}
+
+.sidebarFooter__link {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--dark-gray);
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+.sidebarCopyright {
+  display: block;
+  margin-top: 10px;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* Sidebar Scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  height: 100%;
+  display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--light-gray);
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  display: block;
+}
+
+@media (max-width: 1330px) {
+  .sidebar {
+    max-width: 70px;
+  }
+
+  .sidebar__section {
+    padding: 0px;
+  }
+
+  .sidebar-hide {
+    display: none;
+  }
+
+  .sidebar:hover::-webkit-scrollbar {
+    display: none;
+  }
 }
