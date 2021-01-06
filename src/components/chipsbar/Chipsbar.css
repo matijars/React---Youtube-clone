@@ -1,0 +1,13 @@
+.chipsbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  padding-left: 24px;
+
+  width: 100%;
+  height: 57px;
+
+  background-color: #fff;
+  border-bottom: 1px solid var(--sideOptionActive);
+  opacity: 0.98;
+}

@@ -1,0 +1,26 @@
+.chips {
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--sideOptionHover);
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s ease;
+  outline: none;
+}
+
+.chips:hover {
+  background-color: var(--chipsBgHover);
+}
+
+.chips-active {
+  background-color: var(--dark-gray);
+  color: #fff;
+}
+
+.chips-active:hover {
+  background-color: var(--gray);
+}
