@@ -1,8 +1,12 @@
 .header {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--sideOptionActive);
   padding: 5px 10px;
+  width: 100%;
+  z-index: 19999 !important;
+  background-color: #fff;
 }
 
 .header__left,
