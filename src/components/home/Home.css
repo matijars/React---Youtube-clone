@@ -1,0 +1,14 @@
+.home {
+  max-width: 2200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.home__videoItemContainer {
+  display: grid;
+  justify-content: center;
+  padding: 74px 26px 0px 26px;
+
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 16px;
+}

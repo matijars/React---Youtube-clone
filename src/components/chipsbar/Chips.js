@@ -1,10 +1,6 @@
 import React from "react";
 import "./Chips.css";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 export default function Chips({ title, activeChip }) {
   function handleClick(e) {
     let chip = e.target;
@@ -19,7 +15,11 @@ export default function Chips({ title, activeChip }) {
 
   return (
     <div>
-      <button onClick={handleClick} className={`chips ${activeChip && "chips-active"}`}>
+      <button
+        onClick={handleClick}
+        className={`chips ${activeChip && "chips-active"}`}
+        title={title}
+      >
         {title}
       </button>
     </div>

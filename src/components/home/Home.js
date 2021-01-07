@@ -1,12 +1,28 @@
 import React from "react";
 import "./Home.css";
 import Chipsbar from "../chipsbar/Chipsbar";
+import VideoItem from "../videoItem/VideoItem";
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <Chipsbar />
-      <h1>Home</h1>
+      <div className='home__videoItemContainer'>
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+        <VideoItem />
+      </div>
     </div>
   );
 }

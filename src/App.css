@@ -19,7 +19,6 @@
 
 .mainContent__container {
   background-color: var(--soft-gray);
-  height: 100vh;
   width: 100%;
   margin-top: 59px;
 }
