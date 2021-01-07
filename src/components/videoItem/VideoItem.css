@@ -1,0 +1,27 @@
+.videoItem {
+  margin-bottom: 40px;
+}
+
+.videoItem__thumbnail > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+}
+
+.videoItem__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.videoItem__bottom__left {
+  flex: 0.17;
+}
+
+.videoItem__bottom__middle {
+  flex: 1;
+}
+
+.avatar {
+  border-radius: 50%;
+}

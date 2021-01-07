@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Chipsbar() {
   var settings = {
     infinite: false,
-    speed: 500,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
