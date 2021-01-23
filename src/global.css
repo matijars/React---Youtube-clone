@@ -17,6 +17,8 @@
 
   --chipsBg: #f2f2f2;
   --chipsBgHover: #e6e6e6;
+
+  --black-transparent: rgba(0, 0, 0, 0.8);
 }
 
 /* Global reset */
@@ -45,4 +47,9 @@ a:active {
   font-size: 12px !important;
   padding: 10px !important;
   background-color: rgba(96, 96, 96, 0.9) !important;
+}
+
+.hidden {
+  visibility: hidden;
+  pointer-events: none;
 }

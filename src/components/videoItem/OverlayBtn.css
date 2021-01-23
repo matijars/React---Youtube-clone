@@ -1,0 +1,7 @@
+.btnOverlay > .MuiSvgIcon-root{
+    color: #fff !important;
+    font-size: 29px;
+    background-color: var(--black-transparent);
+    padding: 5px;
+    border-radius: 2px;
+}
