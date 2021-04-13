@@ -30,7 +30,7 @@ function Header({ getQuery }) {
       <div className="header__middle">
         <input
           type="text"
-          placeholder="New Search!"
+          placeholder="Search..."
           value={search}
           onChange={(e) => handleChange(e.target.value)}
         />
