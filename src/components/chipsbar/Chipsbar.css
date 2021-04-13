@@ -12,6 +12,7 @@
   background-color: #fff;
   border-bottom: 1px solid var(--sideOptionActive);
   opacity: 0.98;
+  z-index: 2;
 }
 
 .slick-slide,

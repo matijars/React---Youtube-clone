@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { useState } from "react";
 
 import Logo from "../../img/youtube-logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -10,40 +11,52 @@ import AppsIcon from "@material-ui/icons/Apps";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
-function Header() {
+function Header({ getQuery }) {
+  const [search, setSearch] = useState("");
+
+  const handleChange = (q) => {
+    setSearch(q);
+    getQuery(q);
+  };
+
   return (
-    <div className='header'>
-      <div className='header__left'>
+    <div className="header">
+      <div className="header__left">
         <IconButton>
           <MenuIcon />
         </IconButton>
-        <img src={Logo} alt='Youtube Logo' className='headerLogo' />
+        <img src={Logo} alt="Youtube Logo" className="headerLogo" />
       </div>
-      <div className='header__middle'>
-        <input type='text' placeholder='Search' />
-        <Tooltip title='Search' className='test'>
-          <button className='header__searchBtn'>
+      <div className="header__middle">
+        <input
+          type="text"
+          placeholder="New Search!"
+          value={search}
+          onChange={(e) => handleChange(e.target.value)}
+        />
+        <Tooltip title="Search" className="test">
+          <button className="header__searchBtn">
             <SearchIcon />
           </button>
         </Tooltip>
       </div>
-      <div className='header__right'>
-        <Tooltip title='Create'>
+      <div className="header__right">
+        <Tooltip title="Create">
           <IconButton>
             <VideoCallIcon />
           </IconButton>
         </Tooltip>
-        <Tooltip title='YouTube apps'>
+        <Tooltip title="YouTube apps">
           <IconButton>
             <AppsIcon />
           </IconButton>
         </Tooltip>
-        <Tooltip title='Notifications'>
+        <Tooltip title="Notifications">
           <IconButton>
             <NotificationsIcon />
           </IconButton>
         </Tooltip>
-        <AccountCircleIcon className='headerAvatar' />
+        <AccountCircleIcon className="headerAvatar" />
       </div>
     </div>
   );
