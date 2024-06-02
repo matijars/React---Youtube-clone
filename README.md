@@ -1,8 +1,8 @@
-<div align='center'><img style="width:30%" src='./src/assets/matflix-logo.png'/></div>
+<div align='center'><img style="width:30%" src='./src/img/youtube-logo.png'/></div>
 
 <h2>About the project</h2>
 
-<p>This is YouTube clone developed using React,utilizing React Router fornavigation and props for passing data to components. Incorporated theSlick Carouselforsub-navigation links and Material UI
+<p>This is YouTube clone developed using React, utilizing React Router fornavigation and props for passing data to components. Incorporated theSlick Carouselforsub-navigation links and Material UI
  icons for navigation link components.</p>
 
 <p>Credits for the design goes to <a href='https://www.youtube.com'>Youtube</a></p>
