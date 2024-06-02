@@ -16,6 +16,11 @@
 » CSS <br>
 » React <br>
 
+<h2>Project screenshots</h2>
+
+![image](https://github.com/matijars/Youtube-clone/assets/49566971/21a09aba-99fd-4ada-b1ea-fab2ea5c6c45)
+
+
 
 
 
